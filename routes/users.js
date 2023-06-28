@@ -1,4 +1,4 @@
-const User = require("../modals/user");
+const User = require("../modals/User");
 const router = require("express").Router();
 const bcrypt = require("bcrypt");
 
