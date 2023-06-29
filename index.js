@@ -9,7 +9,9 @@ const userRoute = require("./routes/users");
 dotenv.config();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: ["https://map-pinning-app.onrender.com"]
+}));
 
 mongoose.connect(process.env.URL,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(()=>{
